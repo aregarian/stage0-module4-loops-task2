@@ -5,11 +5,14 @@ public class PowerOfTwo {
         int count = 0;
         int sum = 1;
         int factorial = 1;
+        if (power < 0) {
+            System.out.println("too much power");
+        }
 
         while(count <= power) {
             factorial = count;
             sum  = 1;
-            while (factorial != 1) {
+            while (factorial >= 1) {
                 sum = sum * 2;
                 factorial--;
             }
